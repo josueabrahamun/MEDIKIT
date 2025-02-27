@@ -1,0 +1,44 @@
+.historial-medico {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .historial-medico h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .historial-medico ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .historial-medico li {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .historial-medico button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .historial-medico button:hover {
+    background: #cc0000;
+  }
+  

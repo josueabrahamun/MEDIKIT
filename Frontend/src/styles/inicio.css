@@ -1,106 +1,126 @@
-/* styles.css */
-
-/* Estilo global */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f3f4f6;
-    margin: 0;
-    padding: 0;
+/* inicio.css */
+.auth-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     height: 100vh;
   }
   
-  /* Contenedor principal */
-  form {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  /* Títulos */
-  form h2 {
-    margin-bottom: 1rem;
-    color: #333;
+  .auth-container .left-panel {
+    width: 50%;
+    background-color: hsl(22, 87%, 51%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 1.5rem;
+    padding: 20px;
   }
   
-  /* Inputs */
-  input {
+  .auth-container .left-panel h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .auth-container .logo {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .auth-container .left-panel p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .auth-container .right-panel {
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .auth-container .right-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .auth-container input {
     width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem 0 1rem;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s ease;
+    font-size: 16px;
   }
   
-  input:focus {
-    border-color: #007bff;
-  }
-  
-  /* Botones */
-  button {
-    width: 100%;
-    padding: 0.8rem;
-    background-color: #007bff;
-    color: #ffffff;
+  .auth-container button {
+    background-color: hsla(29, 97%, 46%, 0.842);
+    color: black;
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 10px;
   }
   
-  button:hover {
-    background-color: #0056b3;
+  .auth-container button:hover {
+    background-color: #a0a0a0;
   }
   
- /* Barra de navegación */
-nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #007bff;
-  padding: 0.5rem 1rem;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #007bff;
-  color: #fff;
-  border: 2px solid #007bff;
-}
-
-nav ul li a:active {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
+  /* Adicional para logo */
+  .auth-container .left-panel .logo-image {
+    width: 150px; /* Tamaño más grande */
+    height: 150px;
+    border-radius: 50%; /* Imagen redonda */
+    border: 3px solid #ff2600; /* Contorno azul para la imagen */
+    margin-bottom: 20px;
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+  }
   
+  .auth-container h2 {
+    font-size: 1.5rem;
+    color: hwb(0 4% 95%);
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; /* Fuente elegante */
+  }
+  
+  .auth-container h1.logo {
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 10px;
+    font-weight: bold; /* Texto más destacado */
+    font-family: 'Georgia', serif; /* Fuente elegante */
+  }
+  
+  .auth-container p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Fuente elegante */
+  }
+  
+  .password-error {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffe5e5;
+    padding: 8px;
+    border-radius: 5px;
+    display: block;
+    max-width: 100%;
+    width: 80%; /* Ajusta según el ancho del formulario */
+    margin: 5px auto; /* Centra horizontalmente */
+}
+
+
